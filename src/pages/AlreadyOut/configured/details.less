@@ -1,0 +1,77 @@
+.wrapper {
+  button {
+    margin-top: 40px;
+  }
+  .basicCard {
+    margin-top: 20px;
+    :global(.ant-card-body) {
+      display: flex;
+      ul {
+        margin: 0;
+        width: 50%;
+        li {
+          margin-bottom: 10px;
+          display: flex;
+          span {
+            width: -webkit-max-conetent;
+            margin-left: 20px;
+          }
+          p {
+            width: -webkit-max-conetent;
+          }
+        }
+      }
+    }
+  }
+  .agentCard {
+    margin-top: 20px;
+    :global(.ant-card-body) {
+      display: flex;
+      .agentUl {
+        width: 33%;
+        li {
+          display: flex;
+          span {
+            width: -webkit-max-conetent;
+            margin-left: 20px;
+          }
+          p {
+            width: -webkit-max-conetent;
+          }
+        }
+      }
+    }
+  }
+}
+.inlineUl {
+  display: flex;
+  justify-content: space-between;
+  &:nth-child(2) li{
+    width: 33%;
+  }
+  li {
+    display: flex;
+    width: 25%;
+    span {
+      width: -webkit-max-conetent;
+      margin-left: 20px;
+    }
+    p {
+      width: -webkit-max-conetent;
+    }
+  }
+
+}
+
+.infoCard {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  li {
+    width: 12%;
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}

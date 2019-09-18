@@ -1,0 +1,74 @@
+.bgc {
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.input {
+  margin-right: 10px;
+  width: 250px;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.line {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.left {
+  width: 500px;
+}
+
+.w200 {
+  width: 200px;
+}
+
+.right {
+  margin-left: 200px;
+  min-width: 200px;
+}
+
+.card {
+  background-color: #fff;
+  display: inline-block;
+}
+
+.smallInput {
+  width: 80px;
+}
+
+.table {
+  white-space: nowrap;
+}
+
+.space {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tabPane {
+  margin-top: 20px;
+}

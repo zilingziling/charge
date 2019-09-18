@@ -1,0 +1,10 @@
+试图修改属性 “svn:ignore”，但是它的本地取值已经改变。
+<<<<<<< (��������ֵ)
+*.idea
+.git
+.idea
+||||||| (incoming 'changed from' value)
+=======
+dist
+>>>>>>> (incoming 'changed to' value)
+node_modules

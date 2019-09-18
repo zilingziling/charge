@@ -1,0 +1,40 @@
+.container{
+  display: grid;
+  grid-template-columns:20% 30%  20% 30%;
+  border-bottom:1px dashed rgba(201,201,201,1);
+  img[alt="userHead"]{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  li {
+    margin-bottom: 20px;
+    font-size:18px;
+    font-family:PingFang-SC-Regular;
+    font-weight:400;
+    color:rgba(54,54,54,1);
+    height: 30px;
+  }
+}
+:global(.ant-card-bordered){
+  margin-top: 16px;
+}
+.title{
+  display: flex;
+  align-items: center;
+  margin: 43px 0 36px 0;
+  h1{
+    font-size:24px;
+    font-family:PingFang-SC-Regular;
+    font-weight:bold;
+    color:rgba(54,54,54,1);
+    margin-bottom: 0;
+  }
+  .blue{
+    width:6px;
+    height:24px;
+    background:rgba(60,143,254,1);
+    border-radius:2px;
+    margin-right: 18px;
+  }
+}

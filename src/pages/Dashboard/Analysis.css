@@ -1,0 +1,32 @@
+.card {
+  background-color: #fff;
+  display: inline-block;
+  width: 25%;
+}
+
+.pie {
+  background-color: #fff;
+}
+
+.line {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.box {
+  padding: 20px;
+}
+
+.button{
+  margin-bottom: 20px;
+}
+:global(.antd-pro-charts-chart-card-chartCard .antd-pro-charts-chart-card-total){
+  font-size: 23px;
+}

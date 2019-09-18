@@ -1,0 +1,237 @@
+@import '~antd/lib/style/themes/default.less';
+
+@pro-header-hover-bg: #4EA2FF;
+@nav-header-height:90px;
+@layout-header-height:90px;
+.header {
+  user-select: none;
+  height: @layout-header-height;
+  padding: 0;
+  background: #3C8FFE;
+  position: relative;
+  vertical-align: middle;
+  line-height:@layout-header-height ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .headerLogo{
+    height: 3vw;
+    margin-left: 2vw;
+  }
+  .collLogo{
+    height: 3vw;
+    margin-left: 1vw;
+  }
+  @media screen and (min-width: 1600px){
+  .collLogo{
+    height: 3vw;
+    margin-left: .6vw;
+  }
+}
+  @media screen and (max-width: 1588px){
+    .headerLogo{
+      height: 4vw;
+      margin-left: 2.6vw;
+    }
+  }
+}
+:global(.ant-layout-header){
+  height: @nav-header-height;
+  background: #3C8FFE;
+}
+.logo {
+  height: @layout-header-height;
+  line-height: @layout-header-height;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 0 0 24px;
+  cursor: pointer;
+  font-size: 20px;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+}
+
+.trigger {
+  font-size: 20px;
+  //height: @layout-header-height;
+  cursor: pointer;
+  transition: all 0.3s, padding 0s;
+  position: absolute;
+  left: 12%;
+  width: 20px;
+  height: 20px;
+  line-height:@layout-header-height ;
+  >i{
+    color: #fff;
+    display: block;
+  }
+}
+
+.right {
+  height: 100%;
+  overflow: hidden;
+  .action {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+    > i {
+      vertical-align: middle;
+      color: @text-color;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+
+  }
+  .account {
+    line-height:@layout-header-height ;
+    .avatar {
+      margin-right: 14px;
+      width: 26px;
+      height: 30px;
+    }
+    .name{
+      color: #FFF;
+      font-size:14px;
+      font-family:MicrosoftYaHei;
+      font-weight:bold;
+      margin-right: 25px;
+    }
+    .powerOff{
+      width:20px;
+      height:20px;
+      color: #FFF;
+      font-size:14px;
+      font-family:MicrosoftYaHei;
+      font-weight:bold;
+    }
+  }
+}
+
+.dark {
+  height: @layout-header-height;
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+    > i {
+      color: rgba(255, 255, 255, 0.85);
+    }
+    &:hover,
+    &:global(.opened) {
+      background: @primary-color;
+    }
+    :global(.ant-badge) {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+// 顶部菜单
+.topMenu{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 40%;
+  text-align: center;
+  user-select: none;
+  >*{flex: 1;}
+  li{
+    box-sizing: border-box;
+    padding-top: 19px;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+      background: @pro-header-hover-bg;
+      border-radius: 8px;
+      animation: spring 300ms ease-out;
+    }
+    text-align: center;
+    height: 100%;
+    line-height:@layout-header-height ;
+    h6{
+      font-size:16px;
+      font-family:MicrosoftYaHei;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      margin: 0;
+      padding: 0;
+      line-height:18px;
+    }
+    & > i {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 18px;
+    }
+  }
+}
+@media only screen and (max-width: @screen-md) {
+  .header {
+    :global(.ant-divider-vertical) {
+      vertical-align: unset;
+    }
+    .name {
+      display: none;
+    }
+    i.trigger {
+      padding: 22px 12px;
+    }
+    .logo {
+      padding-left: 12px;
+      padding-right: 12px;
+      position: relative;
+    }
+    .right {
+      position: absolute;
+      right: 12px;
+      top: 0;
+      background: #fff;
+      .account {
+        .avatar {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
